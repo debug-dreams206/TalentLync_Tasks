@@ -2,12 +2,12 @@
 
 A collection of my daily learning, assignments, practice programs, and tools explored during my 6-month internship at TalentLync.
 
-## 📖 About This Repository
+##  About This Repository
 
 This repository documents my internship journey from day one.  
 Each day's work is organized into a separate folder containing learning notes, practice code, tasks, and tools explored during that day.
 
-## 📁 Daily Folder Overview
+## Daily Folder Overview
 
 | Day | Date | Folder | Main Focus |
 |-----|------|--------|------------|
@@ -23,7 +23,7 @@ Each day's work is organized into a separate folder containing learning notes, p
 | `plugins.md` | Tools and AI tools explored |
 | Code files | Programs, exercises and daily tasks |
 
-## 📊 Learning Progress
+##  Learning Progress
 
 | Day | Topic | What I Practiced |
 |-----|-------|------------------|
@@ -31,9 +31,9 @@ Each day's work is organized into a separate folder containing learning notes, p
 | 2 | Forms | Input fields, labels, validation and form submission |
 | 3 | Website Development | Created a simple website using HTML and CSS |
 
-> 📝 New entries will be added regularly as the internship continues.
+>  New entries will be added regularly as the internship continues.
 
-## 🛠️ Technologies & Concepts
+##  Technologies & Concepts
 
 - HTML
 - HTML Forms
@@ -44,7 +44,7 @@ Each day's work is organized into a separate folder containing learning notes, p
 - GitHub
 - AI Tools
 
-## 🎯 Purpose
+##  Purpose
 
 The main purpose of this repository is to maintain a consistent record of my internship learning and practical work. It also serves as a reference for the concepts and projects completed during the internship.
 
