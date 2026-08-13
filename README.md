@@ -15,14 +15,6 @@ Each day's work is organized into a separate folder containing learning notes, p
 | Day 2 | 11-Aug-2026 | `Day-2_Aug-11-2026/` | HTML Forms |
 | Day 3 | 12-Aug-2026 | `Day-3_Aug-12-2026/` | Basic Website Development |
 
-### Files Inside Each Day
-
-| File | Description |
-|------|-------------|
-| `notes.md` | Concepts and lessons learned |
-| `plugins.md` | Tools and AI tools explored |
-| Code files | Programs, exercises and daily tasks |
-
 ##  Learning Progress
 
 | Day | Topic | What I Practiced |
@@ -40,9 +32,6 @@ Each day's work is organized into a separate folder containing learning notes, p
 - Form Validation
 - CSS
 - Basic Web Development
-- Git
-- GitHub
-- AI Tools
 
 ##  Purpose
 
