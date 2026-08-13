@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Hub - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>AI Tools Hub</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<div class="layout">
+
+    <aside>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="packages.html">AI Packages</a>
+        <a href="contact.html">Contact Us</a>
+    </aside>
+
+    <main>
+
+        <section class="content">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                Fill in the form below and our team will contact you.
+            </p>
+
+            <form
+                action="https://platinitee.com/talentlync/form.php"
+                method="POST">
+
+                <label for="username">User Name:</label>
+
+                <input type="text" id="username" name="username" minlength="3"
+                    maxlength="40"
+                    required placeholder="Enter username">
+
+                <label for="email">Email:</label>
+
+                <input type="email" id="email"
+                    name="email" required
+                    placeholder="Enter email">
+
+                <label for="age">Age:</label>
+
+                <input
+                    type="number" id="age" name="age" min="18" max="25"
+                    required placeholder="Enter age" >
+
+                <label for="dob">DOB:</label>
+
+                <input type="date" id="dob"  name="dob"
+                    required >
+
+                <label for="requirement">Requirement:</label>
+
+                <textarea id="requirement" name="requirement"   rows="5"
+                    required
+                    placeholder="Enter your requirement"></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 TalentLync. All Rights Reserved.</p>
+</footer>
+
+<script>
+    const today = new Date().toISOString().split("T")[0];
+    document.getElementById("dob").setAttribute("max", today);
+</script>
+</body>
+</html>
