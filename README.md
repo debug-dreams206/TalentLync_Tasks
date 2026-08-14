@@ -25,7 +25,7 @@ Each day's work is organized into a separate folder containing learning notes, p
 | 2 | Forms | Input fields, labels, validation and form submission |
 | 3 | Website Development | Created a simple website using HTML and CSS |
 | 4 | Lists & Tables | Created a simple HTML website with lists and tables |
-| 5 | Frames | HTML Video Frames |
+| 5 | Frames | HTML Video & Audio Frames |
 
 >  New entries will be added regularly as the internship continues.
 
