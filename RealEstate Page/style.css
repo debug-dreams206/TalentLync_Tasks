@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    display:flex;
+    background-color:rgb(45, 45, 90);
+    color:white;
+    justify-content:space-between;
+    align-items:center;
+}
+nav a{
+    color:white;
+    margin-left:20px;
+}
+aside {
+    width:200px;
+    background-color:rgb(87, 87, 123);
+    color:white;
+}
+aside a {
+    color:white;
+    display:block;
+    padding:10px;
+    margin:5px; 
+}
+main {
+    padding: 20px;
+    flex: 1;
+}
+.properties {
+    display: flex;
+    gap: 20px;
+}
+.property {
+    width: 30%;
+}
+.layout {
+    display: flex;
+    min-height: 600px;
+}
+footer {
+    background-color:rgb(45, 45, 90);
+    color:white;
+    text-align:center;
+    padding:10px;
+}
