@@ -24,43 +24,56 @@
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
     </aside>
-    <main>
-        <h1>Contact Us</h1>
-        <p>If you are looking for a property or have any questions, please contact us using the form below.</p>
-        <form action="form.php" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" minlength="3"maxlength="40" required>
-            <br><br>
-            <label for="email">Email</label>
-            <input type="email"
-                   id="email"
-                   name="email" required>
-            <br><br>
-        <label for="phone">Phone Number</label>
-            <input type="tel" id="phone"   name="phone" required>
-            <br><br>
- <label for="property">Property Type</label>
-            <select id="property" name="property">
-                  <option>Select Property</option>
-                <option>Apartment</option>
-                <option>Villa</option>
-                <option>Independent House</option>
-                <option>Commercial Property</option>
-            </select>
-            <br><br>
-            <label for="message">Message</label>
-            <textarea id="message" name="message"  rows="5" required></textarea><br><br>
-<button type="submit">Submit</button>
-        </form>
- <h2>Our Contact Details</h2>
-        <p><b>Email:</b> info@dreamhome.com</p>
-                <p><b>Phone:</b> 7989786855</p>
-        <p><b>Address:</b> Kurnool, Andhra Pradesh, India</p>
- </main>
+  <main class="contact-main">
+    <h1>Contact Us</h1>
+    <p>
+        If you are looking for a property or have any questions,
+        please contact us using the form below.
+    </p>
+    <div class="contact-details">
+        <h2>Our Contact Details</h2>
+        <p>
+            <b>Email:</b> info@dreamhome.com</p>
+        <p> <b>Phone:</b> 7989786855</p>
+        <p><b>Address:</b> Kurnool, Andhra Pradesh, India </p>
+ </div>
+    <form class="contact-form" action="form.php" method="POST">
+        <label for="name">Name</label>
+        <input  type="text" id="name" name="name" minlength="3" maxlength="40" required>
+ <label for="email">Email</label>
+<input type="email"
+            id="email"
+            name="email"
+            required>
+         <label for="phone">Phone Number</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required>
+
+        <label for="property">Property Type</label>
+
+        <select id="property" name="property">
+
+            <option>Select Property</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Independent House</option>
+            <option>Commercial Property</option>
+
+        </select>
+        <label for="message">Message</label>
+        <textarea
+            id="message" name="message"
+            rows="5"
+            required></textarea>
+   <button type="submit">Submit</button>
+  </form>
+</main>
 </div>
 <footer>
     <p>&copy; 2026 Dream Home Real Estate. All Rights Reserved.</p>
 </footer>
 </body>
 </html>
-
