@@ -1,0 +1,289 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: #1d3557;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+        .hero {
+            background: #457b9d;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .search-box {
+            background: white;
+            padding: 20px;
+            max-width: 900px;
+            margin: 30px auto 0;
+            border-radius: 8px;
+            display: flex;
+            gap: 10px;
+        }
+        .search-box input,
+        .search-box select {
+            padding: 14px;
+            flex: 1;
+            border: 1px solid #ccc;
+        }
+        .search-box button {
+            padding: 14px 25px;
+            background: #e63946;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        section {
+            padding: 50px 8%;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .locations,
+        .properties {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .location {
+            background: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+        .location a {
+            text-decoration: none;
+            color: #1d3557;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .property {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px #ddd;
+        }
+        .property img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .property-content {
+            padding: 20px;
+        }
+        .property-content h3 {
+            margin-bottom: 10px;
+        }
+        .price {
+            color: #e63946;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .details-btn {
+            display: inline-block;
+            background: #1d3557;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>DreamHomes</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="properties.html">Properties</a>
+    </nav>
+</header>
+<section class="hero">
+    <h2>Find Your Dream Home</h2>
+    <p>Search for homes, apartments and properties in your favorite location.</p>
+    <form class="search-box" action="search.html">
+        <input type="text"
+               name="location"
+               placeholder="Enter location">
+        <select name="property-type">
+            <option value="">Property Type</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>House</option>
+            <option>Plot</option>
+        </select>
+        <select name="budget">
+            <option value="">Budget</option>
+            <option>Below ₹50 Lakhs</option>
+            <option>₹50 Lakhs - ₹1 Crore</option>
+            <option>Above ₹1 Crore</option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
+</section>
+<section>
+    <h2>Popular Locations</h2>
+    <div class="locations">
+        <div class="location">
+            <a href="search.html?location=Hyderabad">
+                Hyderabad
+            </a>
+        </div>
+        <div class="location">
+            <a href="search.html?location=Chennai">
+                Chennai
+            </a>
+        </div>
+
+        <div class="location">
+            <a href="search.html?location=Bangalore">
+                Bangalore
+            </a>
+        </div>
+
+        <div class="location">
+            <a href="search.html?location=Mumbai">
+                Mumbai
+            </a>
+        </div>
+
+        <div class="location">
+            <a href="search.html?location=Pune">
+                Pune
+            </a>
+        </div>
+        <div class="location">
+            <a href="search.html?location=Delhi">
+                Delhi
+            </a>
+       </div>
+    </div>
+</section>
+<section>
+    <h2>Featured Properties</h2>
+    <div class="properties">
+        <div class="property">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+            <div class="property-content">
+
+                <h3>Luxury Villa</h3>
+
+                <p>Hyderabad</p>
+
+                <p class="price">₹1.25 Crore</p>
+
+                <p>3 BHK | 2400 Sq.Ft</p>
+
+                <br>
+
+                <a class="details-btn"
+                   href="property-details.html">
+                   View Details
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="property">
+
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+
+            <div class="property-content">
+
+                <h3>Modern Apartment</h3>
+
+                <p>Bangalore</p>
+
+                <p class="price">₹85 Lakhs</p>
+
+                <p>2 BHK | 1500 Sq.Ft</p>
+
+                <br>
+
+                <a class="details-btn"
+                   href="property-details.html">
+                   View Details
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="property">
+
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde">
+
+            <div class="property-content">
+
+                <h3>Family House</h3>
+
+                <p>Chennai</p>
+
+                <p class="price">₹95 Lakhs</p>
+
+                <p>3 BHK | 1800 Sq.Ft</p>
+
+                <br>
+
+                <a class="details-btn"
+                   href="property-details.html">
+                   View Details
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <p>© 2026 DreamHomes Real Estate</p>
+</footer>
+
+</body>
+</html>
