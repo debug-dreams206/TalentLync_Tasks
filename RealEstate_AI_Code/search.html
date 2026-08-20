@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Properties</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #1d3557;
+            color: white;
+            padding: 20px 8%;
+        }
+
+        header a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .search {
+            background: white;
+            padding: 25px;
+            display: flex;
+            gap: 10px;
+        }
+
+        input, select, button {
+            padding: 12px;
+        }
+
+        button {
+            background: #e63946;
+            color: white;
+            border: none;
+        }
+
+        .container {
+            padding: 40px 8%;
+        }
+
+        .properties {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .property {
+            background: white;
+            box-shadow: 0 2px 8px #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .property img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .price {
+            color: #e63946;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1d3557;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>DreamHomes</h1>
+
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="properties.html">Properties</a>
+
+</header>
+
+
+<div class="search">
+
+    <input type="text" placeholder="Location">
+
+    <select>
+        <option>Property Type</option>
+        <option>Apartment</option>
+        <option>Villa</option>
+        <option>House</option>
+        <option>Plot</option>
+    </select>
+
+    <select>
+        <option>Bedrooms</option>
+        <option>1 BHK</option>
+        <option>2 BHK</option>
+        <option>3 BHK</option>
+        <option>4 BHK</option>
+    </select>
+
+    <select>
+        <option>Price</option>
+        <option>Below ₹50 Lakhs</option>
+        <option>₹50 Lakhs - ₹1 Crore</option>
+        <option>Above ₹1 Crore</option>
+    </select>
+
+    <button>Search</button>
+
+</div>
+
+
+<div class="container">
+
+    <h2>Available Properties</h2>
+
+    <div class="properties">
+
+        <div class="property">
+
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+
+            <div class="content">
+
+                <h3>Luxury Villa</h3>
+
+                <p>Hyderabad</p>
+
+                <p class="price">₹1.25 Crore</p>
+
+                <p>3 BHK | 2400 Sq.Ft</p>
+
+                <a class="btn" href="property-details.html">
+                    View Property
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="property">
+
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+
+            <div class="content">
+
+                <h3>Modern Apartment</h3>
+
+                <p>Bangalore</p>
+
+                <p class="price">₹85 Lakhs</p>
+
+                <p>2 BHK | 1500 Sq.Ft</p>
+
+                <a class="btn" href="property-details.html">
+                    View Property
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="property">
+
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde">
+
+            <div class="content">
+
+                <h3>Family House</h3>
+
+                <p>Chennai</p>
+
+                <p class="price">₹95 Lakhs</p>
+
+                <p>3 BHK | 1800 Sq.Ft</p>
+
+                <a class="btn" href="property-details.html">
+                    View Property
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
