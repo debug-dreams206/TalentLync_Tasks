@@ -16,6 +16,9 @@ Each day's work is organized into a separate folder containing learning notes, p
 | Day 3 | 12-Aug-2026 | `Day-3_Aug-12-2026/` | Basic Website Development |
 | Day 4 | 13-Aug-2026 | `Day-4_Aug-13-2026/` | HTML Tables & Lists |
 | Day 5 | 14-Aug-2026 | `Day-5_Aug-14-2026/` | HTML Frames |
+| Day 6 | 15-Aug-2026 | `Day-6_Aug-15-2026/` | Javascript  Validations |
+| Day 7 | 18-Aug-2026 | `Day-7_Aug-18-2026/` | Real Estate & Search AI Code |
+| Day 8 | 20-Aug-2026 | `Day-8_Aug-20-2026/` | Real Estate & Search Task |
 
 ##  Learning Progress
 
@@ -26,6 +29,7 @@ Each day's work is organized into a separate folder containing learning notes, p
 | 3 | Website Development | Created a simple website using HTML and CSS |
 | 4 | Lists & Tables | Created a simple HTML website with lists and tables |
 | 5 | Frames | HTML Video & Audio Frames |
+| 6 | RealEstate & Search Page | Created a simple web page with 
 
 >  New entries will be added regularly as the internship continues.
 
