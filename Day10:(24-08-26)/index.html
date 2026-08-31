@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student CRUD</title>
+    <style>
+        .crud {
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="crud">
+    <form>
+        Student Name:
+        <input type="text" id="name" placeholder="Enter name"><br><br>
+
+        Age:
+        <input type="number" id="age" placeholder="Enter age"><br><br>
+
+        Department:
+        <select id="branch">
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="CSM">CSM</option>
+            <option value="CSD">CSD</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MEC">MEC</option>
+            <option value="CIVIL">CIVIL</option>
+        </select><br><br>
+        Marks:
+        <input type="number" id="marks" placeholder="Enter marks"><br><br>
+        Status:
+        <select id="status">
+            <option value="">Select Status</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select><br><br>
+
+        <input type="button" value="Register" onclick="createStudent()">
+        <input type="reset" value="Clear" onclick="clearStudentForm()">
+    </form>
+
+    <br>
+    <button onclick="checkStudentsCount()">Get Students</button>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Department</th>
+            <th>Marks</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="studentTable"></tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
