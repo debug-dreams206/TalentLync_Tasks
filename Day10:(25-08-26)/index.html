@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student CRUD</title>
+    <style>
+        .crud {
+            border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body onload="getAllStudents()">
+
+    <div class="crud">
+        <form>
+            Student Name:
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+            Age:
+            <input type="number" id="age" placeholder="Enter your age"><br><br>
+
+            Department:
+            <select id="branch">
+                <option value="">Choose</option>
+                <option value="CSE">CSE</option>
+                <option value="CSM">CSM</option>
+                <option value="CSD">CSD</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MEC">MEC</option>
+                <option value="CIVIL">CIVIL</option>
+            </select><br><br>
+
+            Marks:
+            <input type="number" id="marks" placeholder="Enter your marks"><br><br>
+
+            Status:
+            <select id="status">
+                <option value="">Choose</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select><br><br>
+
+            <input type="button" value="Register" id="register" onclick="createStudent()">
+            <input type="reset" value="Clear" onclick="clearStudentForm()">
+        </form>
+
+        <br>
+
+        <button onclick="checkUsersCount()">Get Users</button>
+        <span id="result-cnt"></span>
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Branch</th>
+                <th>Marks</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
