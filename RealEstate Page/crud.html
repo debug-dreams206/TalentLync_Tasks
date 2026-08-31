@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+   .crud-main {
+    padding: 20px;
+}
+.crud-main h1 {
+    color: rgb(45, 45, 90);
+    text-align: center;
+}
+.CreateFormSection {
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f3f3f8;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+.CreateFormSection div {
+    margin: 12px;
+}
+.CreateFormSection label {
+    display: inline-block;
+    width: 140px;
+    font-weight: bold;
+}
+.CreateFormSection input,
+.CreateFormSection select {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.crud-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(45, 45, 90);
+    color: white;
+}
+#propertyTable {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+#propertyTable th {
+    background-color: rgb(45, 45, 90);
+    color: white;
+    padding: 12px;
+}
+#propertyTable td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+#propertyTable img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+}
+.edit-button,
+.delete-button {
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+.edit-button {
+    background-color: #4CAF50;
+}
+.delete-button {
+    background-color: #d9534f;
+}
+.get-button-section {
+    text-align: center;
+    margin: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+    <h2 style="margin-left: 15px;">Dream Home Real Estate</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="property.html">Properties</a>
+        <a href="about.html">About Us</a>
+        <a href="crud.html">CRUD Operations</a>
+        <a href="contact.html" style="margin-right: 15px;">Contact Us</a>
+    </nav>
+</header>
+<div class="layout">
+<aside>
+    <h3 style="margin-left: 15px; padding-top: 5px; color:white">Menu</h3>
+    <a href="home.html">Home</a>
+    <a href="property.html">Properties</a>
+    <a href="about.html">About Us</a>
+    <a href="crud.html">CRUD Operations</a>
+    <a href="contact.html">Contact Us</a>
+</aside>
+<main class="crud-main">
+    <h1>Real Estate CRUD Operations</h1>
+    <section class="CreateFormSection">
+        <h2>Add Property</h2>
+        <form action="" id="propertyForm">
+            <div>
+                <label for="name">Property Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter property name">
+            </div>
+            <div>
+                <label for="location">Location</label>
+                <input type="text" name="location" id="location" placeholder="Enter location">
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input type="number" name="price" id="price" placeholder="Enter price">
+            </div>
+            <div>
+                <label for="type">Property Type</label>
+                <select name="type" id="type">
+                    <option value="">Choose Property Type</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Independent House">Independent House</option>
+                    <option value="Plot">Plot</option>
+                </select>
+            </div>
+            <div>
+                <label for="bedrooms">Bedrooms</label>
+                <select name="bedrooms" id="bedrooms">
+                    <option value="">Choose Bedrooms</option>
+                    <option value="1 BHK">1 BHK</option>
+                    <option value="2 BHK">2 BHK</option>
+                    <option value="3 BHK">3 BHK</option>
+                    <option value="4 BHK">4 BHK</option>
+                </select>
+            </div>
+            <div> <label for="bathrooms">Bathrooms</label>
+                <input type="number" name="bathrooms" id="bathrooms" placeholder="Number of bathrooms">
+            </div>
+            <div><label for="image">Image URL</label>
+                <input type="text" name="image" id="image" placeholder="Enter image URL">
+            </div>
+            <br>
+            <input
+                type="button"  onclick="createProperty()" id="submitButton"
+                name="submitButton"  value="Add Property"
+                class="crud-button" >
+            <input
+                type="button" onclick="clearPropertyForm()" id="resetButton" name="resetButton"
+                value="Clear" class="crud-button">
+        </form>
+    </section>
+    <hr>
+    <section id="section2">
+        <div class="get-button-section">
+            <button
+                type="button" onclick="checkPropertiesCount()"
+                class="crud-button" >
+                Get Properties
+            </button>
+        </div>
+        <table id="propertyTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Property Name</th>
+                    <th>Location</th>
+                    <th>Price</th>
+                    <th>Type</th>
+                    <th>Bedrooms</th>
+                    <th>Bathrooms</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="propertyTableBody">
+            </tbody>
+        </table>
+    </section>
+</main>
+</div>
+<footer>
+    <p>&copy; 2026 Dream Home Real Estate. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
